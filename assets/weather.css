@@ -105,6 +105,8 @@ body{
     margin: 20px 0;
 }
 
+
+
 h1 img{
     width: 30px;
     margin: 0 10px;
@@ -150,7 +152,7 @@ button:hover{
 .input-search{
     border: none;
     background-color: whitesmoke;
-    border-left: 1px solid black;
+    border: 1px solid black;
 }
 
 .input-city:focus{
@@ -158,8 +160,9 @@ button:hover{
 }
 
 .input-city{
-    border: none;
-    background-color: whitesmoke
+    border: 1px solid black;
+    border-right: none;
+    background-color: whitesmoke;
 }
 
 .home{
