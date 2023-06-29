@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="shortcut icon" href="/images/icons/01d.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Aoboshi+One&family=Audiowide&display=swap&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/weather.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0d3ce04075.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <main>
+        
+        <div class="container"> 
+            <h1 class="appHeading"><img src="images/icons/01d.png" alt="">WeatherApp</h1>
+            <form action="/weather-details" method="post" class="form-container">
+                
+                <div class="search-city-container">
+                    <input class="input-box input-city" type="text" name="city" id="city" placeholder="Search City *" required autofocus><button class="input-box input-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>       
+            <hr>
+            <div class="weather-container"> 
+                <div class="weather-icon nobgcolor">
+                    <img src="/images/weather.gif" alt="weather-icon"> 
+                </div> 
+            </div>
+            <div class="wish">Plesant <span class="today">Saturday</span> !</div>
+            <div>Know weather at your city..</div>
+            <div class="fifty-fifty-fifty share-button">
+                <div class="temp feels"> <a href=""><i class="fa-solid fa-share-from-square"></i></a> </div>
+                <div> Share </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-center">Made with 💖 by <a class="author" href="https://www.linkedin.com/in/sriramsanthosh/" target="_blank">Sriram&nbsp;Santhosh</a></div>
+    </footer>
+    <script src="/index.js"></script>
+
+</body>
+</html>

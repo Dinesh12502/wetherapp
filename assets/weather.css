@@ -1,0 +1,200 @@
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: cyan;
+    font-family: 'Aoboshi One', serif;
+    user-select: none;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.appHeading{
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Audiowide', cursive;
+    color: black;
+}
+
+.weather-description{
+    text-transform: capitalize;
+}
+
+
+.container{
+    margin: auto;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    min-width: 350px;
+    width: auto;
+    max-width: 70vw;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+.weather-icon{
+    position: relative;
+    width: 140px;
+    border-radius: 50%;
+    margin: auto;
+    background: skyblue;
+}
+
+.nobgcolor{
+    background: transparent;
+}
+
+.weather-icon img{
+    width: inherit;
+    height: inherit;
+}
+
+
+.line-hor{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.line-hor::before{
+    content: "or";
+    color: #b3b3b3;
+    font-size: 19px;
+    padding: 0 15px;
+    background: #fff;
+}
+
+.temp{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Aoboshi One', serif;
+    
+}
+
+.matter{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.weather-description{
+    font-size: 15px;
+}
+
+.location{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.form-container{
+    margin: 20px 0;
+}
+
+h1 img{
+    width: 30px;
+    margin: 0 10px;
+}
+
+.feels{
+    font-size: 20px;
+}
+
+i{
+    color: crimson;
+    font-size: 30px;
+}
+
+.fifty-fifty-container{
+    display: inline-flex;
+    width: 100%;
+    align-items: cneter;
+    justify-content: space-between;
+
+}
+
+.fifty-fifty{
+    width: inherit;
+    border-right: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.fifty-fifty:hover{
+    cursor: pointer;
+}
+
+.input-box{
+    font-size: 25px;
+    font-family: 'Aoboshi One', serif;
+    text-transform: capitalize;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.input-search{
+    border: none;
+    background-color: whitesmoke;
+    border-left: 1px solid black;
+}
+
+.input-city:focus{
+    outline: none;
+}
+
+.input-city{
+    border: none;
+    background-color: whitesmoke
+}
+
+.home{
+    font-size: 30px;
+}
+
+.home:hover{
+    color: crimson;
+}
+
+.search-city-container{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.author{
+    font-weight: bolder;
+    font-size: 25px;
+    color: red;
+    font-family: 'Dancing Script', cursive;
+}
+
+.author:hover{
+    color: hotpink;
+}
+
+.wish{
+    font-family: 'Dancing Script', cursive;
+    color: #5E2121;
+    font-weight: bolder;
+    font-size: 40px;
+}
