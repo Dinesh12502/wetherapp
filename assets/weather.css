@@ -163,6 +163,7 @@ button:hover{
     border: 1px solid black;
     border-right: none;
     background-color: whitesmoke;
+    width: 280px;
 }
 
 .home{
