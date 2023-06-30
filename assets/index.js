@@ -15,9 +15,45 @@ btn.addEventListener("click", async()=>{
 });
 
 const today = new Date();
-const index = today.getDay();
-// console.log(index);
-// Sunday - Saturday : 0 - 6
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const todayspan = document.querySelector(".today");
-todayspan.textContent = days[index];
+const hours = document.querySelector(".hours");
+const minutes = document.querySelector(".minutes");
+const meridians = document.querySelector(".am-pm");
+updateTime();
+function updateTime(){
+    var today = new Date();
+    var index = today.getDay();
+    var Hours = today.getHours();
+    var Minutes = today.getMinutes();
+    var Meridians = "AM";
+    if(Hours>12){
+        Hours-=12;
+        Meridians = "PM";
+    }
+    else if(Hours == 0){
+        Hours = 12;
+        Meridians = "AM";
+    }
+    else if(Hours == 12){
+        Meridians = "PM";
+    }
+    if(Number(Minutes) < 10){
+        Minutes = "0"+Minutes;
+    }
+    if(Hours<10){
+        hours.textContent = "0"+Hours;
+    }
+    else{
+        hours.textContent = Hours;
+    }
+    minutes.innerHTML = Minutes;
+    meridians.textContent = Meridians;
+    todayspan.textContent = days[index];
+}
+
+
+setInterval(function(){
+    updateTime();
+
+}, 15000);
