@@ -10,7 +10,21 @@ module.exports.weather = function(req, res){
     console.log(req.cookies);
     res.cookie('city', req.body.city);
     console.log(req.cookie);
-    var city = req.body.city;
+    var temp_city = req.body.city.trim();
+    var city = "";
+    var prevLetter = temp_city[0];
+    if(prevLetter != ' '){
+        city+=prevLetter;
+    }
+    for(let i = 1; i<temp_city.length; i++){
+        if(temp_city[i] == " " && prevLetter == " "){
+            continue;
+        }
+        else{
+            city+=temp_city[i];
+            prevLetter = temp_city[i];
+        }
+    }
     
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     var data;

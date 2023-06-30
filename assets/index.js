@@ -14,8 +14,9 @@ btn.addEventListener("click", async()=>{
     }
 });
 
-const today = new Date('June 29, 2023 8:11:30');
+const today = new Date();
 const index = today.getDay();
+// console.log(index);
 // Sunday - Saturday : 0 - 6
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const todayspan = document.querySelector(".today");
